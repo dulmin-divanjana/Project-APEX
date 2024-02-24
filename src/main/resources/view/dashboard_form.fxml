@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="744.0" prefWidth="1048.0" style="-fx-background-color: #D9D9D9;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.carservicesystem.controller.DashboardFormController">
+   <children>
+      <Text fill="#38137c" layoutX="35.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" wrappingWidth="156.13671875">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <Text fill="#38137c" fontSmoothingType="LCD" layoutX="826.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our Mission" underline="true" wrappingWidth="140.13671875">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="528.0" fitWidth="967.0" layoutY="215.0">
+         <image>
+            <Image url="@../assets/Lovepik_com-401744032-car-wash-service.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="334.0" fitWidth="361.0" layoutX="23.0" layoutY="78.0">
+         <image>
+            <Image url="@../assets/pngwing.com%20(4).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="184.0" fitWidth="300.0" layoutX="435.0" layoutY="178.0">
+         <image>
+            <Image url="@../assets/pngwing.com%20(6).png" />
+         </image>
+      </ImageView>
+      <Text fill="#38137c" fontSmoothingType="LCD" layoutX="829.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At [APEX Auto Services], our mission is to deliver exceptional automotive care with a commitment to reliability, safety, and customer satisfaction. We strive to be a trusted partner for vehicle owners, providing expert diagnostics, skilled craftsmanship, and transparent communication. Our dedicated team is driven by a passion for excellence, ensuring every customer leaves our center with confidence in the performance and longevity of their vehicles. We aim to set the standard for excellence in the automotive service industry, prioritizing integrity, innovation, and a personalized experience for every client.&quot;" wrappingWidth="192.13671875">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="46.0" layoutY="662.0" onAction="#btnBackOnAction" style="-fx-background-color: #1d0065;" text="About ?" textFill="WHITE" />
+   </children>
+</AnchorPane>

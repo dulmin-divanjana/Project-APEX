@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.carservicesystem.controller.MainFormController">
+    <children>
+        <AnchorPane fx:id="rootNode" layoutX="319.0" minHeight="0.0" prefHeight="744.0" prefWidth="1048.0">
+         <children>
+            <AnchorPane layoutY="-10.0" prefHeight="754.0" prefWidth="1048.0" style="-fx-background-color: CCCCCC;">
+               <children>
+                  <ImageView fitHeight="626.0" fitWidth="1064.0" layoutX="-15.0" layoutY="130.0">
+                     <image>
+                        <Image url="@../assets/aaaaaaaa.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#230068" layoutX="5.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO">
+                     <font>
+                        <Font name="System Bold" size="55.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#230068" layoutX="9.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="APEX ">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="5.0" layoutY="714.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At [APEX Auto Services], we are committed to excellence in every service we provide. Whether it's a routine checkup or a complex repair, you can trust us to deliver top-notch automotive care with a focus on quality, integrity, and customer satisfaction.&quot;" wrappingWidth="1043.65625">
+                     <font>
+                        <Font name="System Italic" size="17.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="958.0" layoutY="36.0">
+                     <image>
+                        <Image url="@../assets/er.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="837.0" layoutY="34.0">
+                     <image>
+                        <Image url="@../assets/po.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="708.0" layoutY="29.0">
+                     <image>
+                        <Image url="@../assets/qw.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#230068" fontSmoothingType="LCD" layoutX="108.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Auto Services">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="433.0" fitWidth="462.0" layoutX="-6.0" layoutY="163.0">
+                     <image>
+                        <Image url="@../assets/pngwing.com%20(2).png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </children></AnchorPane>
+        <Pane layoutX="-6.0" layoutY="-7.0" prefHeight="751.0" prefWidth="325.0" style="-fx-background-color: #030723;">
+            <children>
+                <JFXButton layoutX="-4.0" layoutY="632.0" minHeight="0.0" onAction="#PaymentOnAction" prefHeight="50.0" prefWidth="286.0" text="Payment" textFill="#6aa8ff">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </JFXButton>
+                <Label layoutX="28.0" layoutY="157.0" prefHeight="29.0" prefWidth="119.0" text="Menu" textFill="#6aa8ff" underline="true">
+                    <font>
+                        <Font name="System Bold" size="23.0" />
+                    </font>
+                </Label>
+                <JFXButton layoutX="-11.0" layoutY="561.0" minHeight="0.0" onAction="#ServiceOnAction" prefHeight="50.0" prefWidth="293.0" text="Services" textFill="#6aa8ff">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </JFXButton>
+                <JFXButton layoutX="-18.0" layoutY="489.0" minHeight="0.0" onAction="#VehicleOnAction" prefHeight="50.0" prefWidth="301.0" text="Vehicle" textFill="#6aa8ff">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </JFXButton>
+                <JFXButton layoutX="12.0" layoutY="208.0" minHeight="0.0" onAction="#btnDashboardOnAction" prefHeight="50.0" prefWidth="266.0" text="Dashboard" textFill="#6aa8ff">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </JFXButton>
+                <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="45.0" layoutY="567.0">
+                    <image>
+                        <Image url="@../assets/1686816.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="46.0" layoutY="497.0">
+                    <image>
+                        <Image url="@../assets/2211392.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="45.0" layoutY="640.0">
+                    <image>
+                        <Image url="@../assets/8983163.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="46.0" layoutY="288.0">
+                    <image>
+                        <Image url="@../assets/img.icons8.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="44.0" layoutY="431.0">
+                    <image>
+                        <Image url="@../assets/img.icons.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="44.0" layoutY="214.0">
+                    <image>
+                        <Image url="@../assets/im.png" />
+                    </image>
+                </ImageView>
+                <JFXButton layoutX="-5.0" layoutY="279.0" minHeight="0.0" onAction="#btnCustomerOnAction" prefHeight="50.0" prefWidth="286.0" text="Customer" textFill="#6aa8ff">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </JFXButton>
+                <JFXButton layoutX="3.0" layoutY="426.0" minHeight="0.0" onAction="#EmployeeOnAction" prefHeight="50.0" prefWidth="278.0" text="Employee" textFill="#6aa8ff">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </JFXButton>
+                <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="122.0" layoutY="48.0">
+                    <image>
+                        <Image url="@../assets/img.iconsss8.png" />
+                    </image>
+                </ImageView>
+                <Text fill="WHITE" layoutX="145.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Text>
+            <Text fill="WHITE" layoutX="28.0" layoutY="725.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Need help ?">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="28.0" layoutY="740.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Open our help center" />
+            <JFXButton fx:id="txtSupplier" layoutX="2.0" layoutY="350.0" minHeight="0.0" onAction="#btnSupplierOnAction" prefHeight="50.0" prefWidth="266.0" text="Supplier" textFill="#6aa8ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="46.0" layoutY="358.0">
+               <image>
+                  <Image url="@../assets/10753172.png" />
+               </image>
+            </ImageView>
+            </children>
+        </Pane>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="51.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="APEX " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="7.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Auto Services">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="6.0" layoutY="-1.0">
+         <image>
+            <Image url="@../assets/5467021.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

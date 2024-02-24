@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="744.0" prefWidth="1048.0" style="-fx-background-color: #D9D9D9;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.carservicesystem.controller.PaymentFormController">
+    <children>
+        <Label layoutX="30.0" layoutY="14.0" text="Payment Manage" textFill="#38137c">
+            <font>
+                <Font size="29.0" />
+            </font>
+        </Label>
+        <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="908.0" layoutY="693.0" onAction="#btnPlaceOrderOnAction" prefHeight="31.0" prefWidth="123.0" style="-fx-background-color: red;" text="Delete All" textFill="#080036">
+            <font>
+                <Font size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="411.0" layoutY="298.0" onAction="#btnAddToCartOnAction" prefHeight="31.0" prefWidth="141.0" style="-fx-background-color: #FF822E;" text="Add to cart" textFill="#080036">
+            <font>
+                <Font size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <TableView fx:id="txtPayment" layoutX="14.0" layoutY="383.0" prefHeight="291.0" prefWidth="1019.0">
+            <columns>
+                <TableColumn fx:id="colVehicaleId" prefWidth="200.0" text="Vehicle ID" />
+                <TableColumn fx:id="colModel" prefWidth="200.0" text="Model" />
+                <TableColumn fx:id="colSerViceId" prefWidth="200.0" text="Service ID" />
+                <TableColumn fx:id="colType" prefWidth="200.0" text="Type" />
+            <TableColumn fx:id="colTotal" prefWidth="220.0" text="Total" />
+            </columns>
+        </TableView>
+      <Label layoutX="30.0" layoutY="132.0" text="Service_ID :" textFill="#7749bc" AnchorPane.bottomAnchor="581.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="892.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="470.0" layoutY="45.0" text="Date :" textFill="#0030ab">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="217.0" prefHeight="31.0" prefWidth="144.0" text="Vehicale _ID : " textFill="#7749bc" AnchorPane.bottomAnchor="496.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="874.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="700.0" text="Net Total :" textFill="#2d0061">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbVehicaleId" layoutX="156.0" layoutY="219.0" onAction="#vehicaleOnAction" prefHeight="30.0" prefWidth="95.0" unFocusColor="#04004d" AnchorPane.bottomAnchor="495.0" />
+      <Label fx:id="txtDate" layoutX="534.0" layoutY="43.0" prefHeight="31.0" prefWidth="164.0" textFill="#0b0086">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="273.0" layoutY="218.0" text="Model :" textFill="#7749bc" AnchorPane.bottomAnchor="495.0" AnchorPane.leftAnchor="273.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtModel" layoutX="355.0" layoutY="218.0" prefHeight="31.0" prefWidth="104.0" textFill="#04004d" AnchorPane.bottomAnchor="495.0" AnchorPane.leftAnchor="355.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="470.0" layoutY="216.0" text="Color :" textFill="#7749bc" AnchorPane.bottomAnchor="497.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtColor" layoutX="542.0" layoutY="214.0" prefHeight="31.0" prefWidth="87.0" textFill="#04004d" AnchorPane.bottomAnchor="499.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbService" layoutX="156.0" layoutY="134.0" onAction="#ServiceOnAction" prefHeight="30.0" prefWidth="95.0" unFocusColor="#04004d" AnchorPane.bottomAnchor="580.0" />
+      <Label layoutX="273.0" layoutY="133.0" text="Type :" textFill="#7749bc" AnchorPane.bottomAnchor="580.0" AnchorPane.leftAnchor="273.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtType" layoutX="339.0" layoutY="133.0" prefHeight="31.0" prefWidth="104.0" textFill="#04004d" AnchorPane.bottomAnchor="580.0" AnchorPane.leftAnchor="339.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="468.0" layoutY="128.0" text="Total :" textFill="#7749bc">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtServiceTotal" layoutX="538.0" layoutY="127.0" prefHeight="31.0" prefWidth="126.0" textFill="#04004d">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtNetTotal" layoutX="142.0" layoutY="701.0" prefHeight="31.0" prefWidth="172.0" textFill="#04004d">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtCustomerId" layoutX="177.0" layoutY="299.0" prefHeight="31.0" prefWidth="95.0" textFill="#04004d">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="789.0" layoutY="693.0" onAction="#deleteOnAction" prefHeight="31.0" prefWidth="97.0" style="-fx-background-color: red;" text="Delete" textFill="#080036">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="347.0" fitWidth="361.0" layoutX="681.0" layoutY="18.0">
+         <image>
+            <Image url="@../assets/pngwing.coooooooooooooom%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="412.0" layoutY="300.0">
+         <image>
+            <Image url="@../assets/2252291.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="794.0" layoutY="697.0">
+         <image>
+            <Image url="@../assets/img.icons81234.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="913.0" layoutY="698.0">
+         <image>
+            <Image url="@../assets/img.icdelete%20allons8.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="29.0" layoutY="300.0" prefHeight="31.0" prefWidth="144.0" text="Customer _ID : " textFill="#7749bc">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="574.0" layoutY="299.0" onAction="#btnSendEmailOnAction" prefHeight="31.0" prefWidth="141.0" style="-fx-background-color: #CE96FB;" text="Send Email">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="579.0" layoutY="306.0">
+         <image>
+            <Image url="@../assets/immmmmmmmmmg.icons8.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
